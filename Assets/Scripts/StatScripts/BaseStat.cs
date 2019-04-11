@@ -4,10 +4,13 @@ using UnityEngine;
 
 public abstract class BaseStat : MonoBehaviour
 {
-    public int currentAmmount;
-    public int maxAmmount;
+    public float health;
+    public float maxHealth;
+    public float mana;
+    public float maxMana;
+    public int armour;
+    public int move;
 
-
-    public abstract void Moddify(int value);
     
+
 }

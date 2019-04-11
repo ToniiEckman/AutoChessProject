@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 136398917561060344}
   - component: {fileID: 23637913824515544}
   - component: {fileID: 114741456260702466}
-  - component: {fileID: 4230284298676909973}
+  - component: {fileID: 4186081881764931034}
   m_Layer: 0
   m_Name: ChessPiece
   m_TagString: Untagged
@@ -106,8 +106,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 925f865e97cc40144879223d0428005a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  activeTarget: {fileID: 0}
   isEnemy: 0
---- !u!114 &4230284298676909973
+--- !u!114 &4186081881764931034
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,8 +118,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1053875321947804}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a293a69c426707469534e3406f6f7ad, type: 3}
+  m_Script: {fileID: 11500000, guid: 33f15be6e6cc2a7439365730a8c4f22b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentAmmount: 10
-  maxAmmount: 10
+  health: 100
+  maxHealth: 100
+  mana: 100
+  maxMana: 100
+  armour: 5
+  move: 3

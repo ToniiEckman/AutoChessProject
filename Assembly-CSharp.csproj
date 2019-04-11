@@ -71,8 +71,7 @@
     <Compile Include="Assets\Scripts\PieceMover.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\StatScripts\BaseStat.cs" />
-    <Compile Include="Assets\Scripts\StatScripts\Health.cs" />
-    <Compile Include="Assets\Scripts\StatScripts\IStatus.cs" />
+    <Compile Include="Assets\Scripts\StatScripts\Soldier.cs" />
     <Compile Include="Assets\Scripts\TestScripts\Player1Script.cs" />
     <Compile Include="Assets\Scripts\TestScripts\TestPeice.cs" />
     <Compile Include="Assets\Scripts\TestScripts\TestTile.cs" />

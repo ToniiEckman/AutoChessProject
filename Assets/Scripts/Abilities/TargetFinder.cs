@@ -60,7 +60,7 @@ public abstract class TargetFinder : MonoBehaviour
 
     public BoardTile Pathfinding(BoardTile[,] map,BoardTile casterLocation,BoardTile targetLocation,int range)
     {
-
+        
         BoardTile currentTarget = null;
         float currentTargetDistance = 0;
         //finds all possible tiles within range of target
@@ -107,6 +107,7 @@ public abstract class TargetFinder : MonoBehaviour
             }
         }
         return currentTarget;
+        
 
     }
 
