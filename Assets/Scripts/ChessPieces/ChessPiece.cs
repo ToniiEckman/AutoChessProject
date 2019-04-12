@@ -38,7 +38,7 @@ public abstract class ChessPiece : MonoBehaviour,IClickedOn,PieceMover
             CurrentBlock.CurrentPiece = null;
             CurrentBlock = newblock;
             CurrentBlock.CurrentPiece = this;
-            transform.position = new Vector3(CurrentBlock.CurrentX, 1.5f, CurrentBlock.CurrentZ);
+            transform.position = new Vector3(CurrentBlock.CurrentX, .5f, CurrentBlock.CurrentZ);
             
         }
     }

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa80df90469ab7e43ae0d3be59f11143, type: 3}
+  m_Name: Default Melee
+  m_EditorClassIdentifier: 
+  aName: Default
+  range: 1
+  aSprite: {fileID: 0}
+  myDamage: -10
+  hitBox: {fileID: 1533760576574163514, guid: 3cbcb94ed346cfe4a99907f4393fb39a, type: 3}

@@ -61,18 +61,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Abilities\TargetFinder.cs" />
+    <Compile Include="Assets\Animations\AnimController.cs" />
+    <Compile Include="Assets\Scripts\Abilities\BaseAbility.cs" />
+    <Compile Include="Assets\Scripts\Abilities\HitCube.cs" />
+    <Compile Include="Assets\Scripts\Abilities\MeleeAbility.cs" />
     <Compile Include="Assets\Scripts\BoardMap.cs" />
     <Compile Include="Assets\Scripts\BoardTile.cs" />
     <Compile Include="Assets\Scripts\ChessPieces\ChessPiece.cs" />
+    <Compile Include="Assets\Scripts\ChessPieces\Player1Script.cs" />
+    <Compile Include="Assets\Scripts\Classes\BaseClass.cs" />
+    <Compile Include="Assets\Scripts\Classes\Soldier.cs" />
+    <Compile Include="Assets\Scripts\Classes\TargetFinder.cs" />
     <Compile Include="Assets\Scripts\FindClosestTarget.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\IClickedOn.cs" />
-    <Compile Include="Assets\Scripts\PieceMover.cs" />
+    <Compile Include="Assets\Scripts\Interfaces\IClickedOn.cs" />
+    <Compile Include="Assets\Scripts\Interfaces\IUnit.cs" />
+    <Compile Include="Assets\Scripts\Interfaces\PieceMover.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\StatScripts\BaseStat.cs" />
-    <Compile Include="Assets\Scripts\StatScripts\Soldier.cs" />
-    <Compile Include="Assets\Scripts\TestScripts\Player1Script.cs" />
     <Compile Include="Assets\Scripts\TestScripts\TestPeice.cs" />
     <Compile Include="Assets\Scripts\TestScripts\TestTile.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">

@@ -29,9 +29,17 @@ public class BoardMap : MonoBehaviour {
         
         
         ConstructBoard();
-        SpawnPieces(TempPiece,TrackedTiles[0,1]);
-        SpawnPieces(TempPiece2,TrackedTiles[5,7]);
-        TrackedTiles[5, 7].getPiece().toggleFriendly();
+        SpawnPieces(TempPiece,TrackedTiles[2,3]);
+        SpawnPieces(TempPiece, TrackedTiles[0, 3]);
+        SpawnPieces(TempPiece, TrackedTiles[1, 4]);
+
+        SpawnEnemyPieces(TempPiece2,TrackedTiles[7,0]);
+        SpawnEnemyPieces(TempPiece2, TrackedTiles[6, 3]);
+        SpawnEnemyPieces(TempPiece2, TrackedTiles[7, 5]);
+        
+        
+        
+
 
     }
 
@@ -105,12 +113,32 @@ public class BoardMap : MonoBehaviour {
     public void SpawnPieces(GameObject piece,BoardTile tile)
     {
         
-        GameObject go = Instantiate(piece, new Vector3(tile.CurrentX, 1.5f, tile.CurrentZ), Quaternion.identity);
+        GameObject go = Instantiate(piece, new Vector3(tile.CurrentX, .5f, tile.CurrentZ), Quaternion.Euler(0,90,0));
         
+
         go.transform.SetParent(transform);
         tile.CurrentPiece = go.GetComponent<ChessPiece>();
         go.GetComponent<ChessPiece>().CurrentBlock = tile;
         go.GetComponent<ChessPiece>().setPlayer(player);
+        
+      
+
+
+
+    }
+    public void SpawnEnemyPieces(GameObject piece, BoardTile tile)
+    {
+
+        GameObject go = Instantiate(piece, new Vector3(tile.CurrentX, 0.5f, tile.CurrentZ), Quaternion.Euler(0,-90,0));
+
+
+        go.transform.SetParent(transform);
+        tile.CurrentPiece = go.GetComponent<ChessPiece>();
+        go.GetComponent<ChessPiece>().CurrentBlock = tile;
+        go.GetComponent<ChessPiece>().setPlayer(player);
+        
+
+
 
     }
 }
