@@ -16,10 +16,7 @@ public abstract class BaseClass : MonoBehaviour
 
     public ChessPiece Target = null;
 
-    public void Combat()
-    {
-        throw new System.NotImplementedException();
-    }
+    
 
 
     //finds closest possible target
@@ -110,7 +107,10 @@ public abstract class BaseClass : MonoBehaviour
 
                         if (map[i, j] != targetLocation)
                         {
-                            possible.Add(map[i, j]);
+                            if (map[i, j].CurrentPiece == null)
+                            {
+                                possible.Add(map[i, j]);
+                            }
                         }
                     }
                 }

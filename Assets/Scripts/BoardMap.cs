@@ -30,7 +30,7 @@ public class BoardMap : MonoBehaviour {
         
         ConstructBoard();
         SpawnPieces(TempPiece,TrackedTiles[2,3]);
-        SpawnPieces(TempPiece, TrackedTiles[0, 3]);
+        SpawnPieces(TempPiece, TrackedTiles[0, 7]);
         SpawnPieces(TempPiece, TrackedTiles[1, 4]);
 
         SpawnEnemyPieces(TempPiece2,TrackedTiles[7,0]);

@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class TestPeice : ChessPiece{
 
-    private void Update()
-    {
-        
-    }
+    
 
 }

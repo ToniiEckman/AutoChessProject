@@ -62,6 +62,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Animations\AnimController.cs" />
+    <Compile Include="Assets\Audio\Sound.cs" />
+    <Compile Include="Assets\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Abilities\BaseAbility.cs" />
     <Compile Include="Assets\Scripts\Abilities\HitCube.cs" />
     <Compile Include="Assets\Scripts\Abilities\MeleeAbility.cs" />
